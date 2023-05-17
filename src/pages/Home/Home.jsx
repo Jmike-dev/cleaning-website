@@ -5,23 +5,22 @@ import IMAGES from '../../assets/images'
 
 export default function Home() {
   return (
-    <div 
-    className='bg-primary-grey flex-bottom pt-4 rounded-xl mx-3  mt-5 pb-4'>
-        <div 
-        className='flex bg-primary-blue rounded-xl px-2 mx-2 my-2  shadow-2xl transition-all '>
-          <div className='flex relative'>
-            <h1 
-            className='text-primary-grey hover:text-primary-dark-grey text-5xl mt-28   mx-44  mb-44'>
-              Are you tired of cleaning then it's time to call us</h1>
-              <button className='bg-primary-green py-2 px-4   hover:bg-primary-light-green   rounded-full absolute bottom-12 left-40'>book now</button>
-          </div>
-            <div 
-            className='px-4 mx-3 mt-3'>
-              <img src={IMAGES.img1}  alt="" 
-              className='max-w-lg  flex rounded-3xl h-96 mb-3 transform transition-all hover:scale-95 ' />
-            </div>
-        </div>
+    <>
         {/* <About /> */}
+    <div  className='bg-primary-blue  rounded-b-lg  md:w-full sm:w-auto  '>
+       <div className='w-full relative '>
+          <div className=' flex justify-end py-2 mx-3 ' >
+            <img className='h-80 w-auto rounded-3xl ' src={IMAGES.img1} alt=""  />
+          </div>
+          <div className='relative left-3 md:absolute md:left-5 md:top-5 md:w-1/3'>
+            <h1 className='text-xl text-primary-grey hover:text-primary-light-green md:text-5xl '>Are you tired of cleaning then it's time to call us</h1>
+          </div>
+          <div className='relative '>
+              <a href="/" class="bottom-0 right-0 inline-block rounded-full px-4 py-2 text-white bg-primary-green transition
+               ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-100 hover:bg-primary-light-green">Button</a>
+          </div>
+      </div>
     </div>
+    </>
   )
 }
