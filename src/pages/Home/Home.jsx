@@ -20,7 +20,7 @@ export default function Home() {
           </div>
           {/* button div container */}
           <div className='relative py-1'>
-              <a href="/" class=" absolute  bottom-1 left-36 rounded-lg md:rounded-full px-4 py-2 text-white bg-primary-green transition
+              <a href="/" className=" absolute  bottom-1 left-36 rounded-lg md:rounded-full px-4 py-2 text-white bg-primary-green transition
                ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-100 hover:text-primary-blue hover:bg-primary-light-green md:bottom-28 md:left-78 md:text-3xl">Book Now</a>
           </div>
       </div>
