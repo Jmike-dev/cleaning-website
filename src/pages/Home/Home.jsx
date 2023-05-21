@@ -1,6 +1,6 @@
 import React from 'react'
-import IMAGES from '../../assets/images'
-import About from './components/About'
+import IMAGES from '../../assets/images/images'
+import HomeFoooter from './components/HomeFooter'
 
 
 export default function Home() {
@@ -9,9 +9,9 @@ export default function Home() {
     {/* home parent div  container */}
     <div  className='bg-primary-black  rounded-b-lg  md:w-full sm:w-auto py-2 my-4'>
       {/* home child div container */}
-       <div className='w-full relative '>
+       <div className='w-full relative flex'>
         {/* image div container */}
-          <div className=' flex justify-end py-2 mx-3 ' >
+          <div className=' flex justify-end py-2 mx-3 m-auto ' >
             <img className='h-64 w-auto rounded-xl md:h-80 ' src={IMAGES.img1} alt=""  />
           </div>
           {/* h1  div container */}
@@ -25,7 +25,7 @@ export default function Home() {
           </div>
       </div>
     </div>
-      <About />
+      < HomeFoooter/>
     </>
   )
 }
