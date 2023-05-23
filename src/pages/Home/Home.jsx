@@ -7,23 +7,22 @@ export default function Home() {
   return (
     <>
     {/* home parent div  container */}
-    <div  className='bg-primary-black  rounded-b-lg  md:w-full sm:w-auto py-2 my-4'>
+    <div  className='bg-primary-black  rounded-b-lg  md:w-full sm:w-auto py-2 my-4 relative'>
       {/* home child div container */}
-       <div className='w-full relative flex'>
-        {/* image div container */}
-          <div className=' flex justify-end py-2 mx-3 m-auto ' >
-            <img className='h-64 w-auto rounded-xl md:h-80 ' src={IMAGES.img1} alt=""  />
-          </div>
+       <div className='w-full flex justify-end md:py-4 md:px-2 static' >
           {/* h1  div container */}
-          <div className='relative left-6 md:absolute md:left-5 md:top-5 md:w-1/3 bottom-2 mx-24 my-10'>
+          <div className='relative w-1/2 px-2 mx-1 my-5 md:absolute md:left-5 md:top-5 md:w-1/3'>
             <h1 className='text-2xl text-primary-blue hover:text-primary-green md:text-5xl '>Are you tired of cleaning then it's time to call us</h1>
           </div>
-          {/* button div container */}
-          <div className='relative py-1'>
-              <a href="/" className=" absolute  bottom-1 left-36 rounded-lg md:rounded-full px-4 py-2 text-white bg-primary-green transition
-               ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-100 hover:text-primary-blue hover:bg-primary-light-green md:bottom-28 md:left-78 md:text-3xl">Book Now</a>
+        {/* image div container */}
+          <div className='w-2/3 px-2 md:w-auto md:h-96 my-4' >
+            <img className=' w-full h-full rounded-xl md:h-96' src={IMAGES.img1} alt=""  />
           </div>
       </div>
+          {/* button div container */}
+          <div className='relative my-6 mx-6 md:mx-96 md:right-72 md:bottom-32 md:py-4 md:px-48'>
+              <a href="/" className=" w-full h-full rounded-xl block text-2xl bg-primary-green text-center md:text-4xl">Book Now</a>
+          </div>
     </div>
       < HomeFoooter/>
     </>
