@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .inputClass{
+        @apply text-center w-full h-12 text-primary-black font-bold rounded-3xl placeholder-primary-black ;
+    }
+}
