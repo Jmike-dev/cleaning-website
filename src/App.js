@@ -1,15 +1,17 @@
 import './App.css';
-import Header from './layout/Header/Header';
-import Services from './pages/CleaningServices/Services';
-import Home from './pages/Home/Home';
+import FooterSection from './layout/Footer/FooterSection';
+import HeaderSection from './layout/Header/HeaderSection';
+import { BrowserRouter } from 'react-router-dom'
+
 
 function App() {
   return (
-   <div >
-    <Header/>
-   <Home/>
-   <Services/>
-   </div>
+   <>
+   <BrowserRouter>
+    <HeaderSection/>
+   <FooterSection/>
+   </BrowserRouter>
+   </>
   );
 }
 
