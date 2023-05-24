@@ -7,11 +7,11 @@ export default function Home() {
   return (
     <>
     {/* home parent div  container */}
-    <div  className='bg-primary-black  rounded-b-lg  md:w-full sm:w-auto py-2 my-4 relative'>
+    <div  className='bg-primary-black  rounded-b-lg  md:w-full sm:w-auto py-2 md:mt-24 mt-24  md:relative'>
       {/* home child div container */}
        <div className='w-full flex justify-end md:py-4 md:px-2 static' >
           {/* h1  div container */}
-          <div className='relative w-1/2 px-2 mx-1 my-5 md:absolute md:left-5 md:top-5 md:w-1/3'>
+          <div className=' w-1/2 px-2 mx-1 my-5 md:absolute md:left-5 md:top-5 md:w-1/3'>
             <h1 className='text-2xl text-primary-blue hover:text-primary-green md:text-5xl font-serif'>Are you tired of cleaning then it's time to call us</h1>
           </div>
         {/* image div container */}

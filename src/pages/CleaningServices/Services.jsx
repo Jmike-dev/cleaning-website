@@ -6,7 +6,7 @@ export default function Services() {
   return (
 <>
 {/* parent service div */}
-<div className='w-full flex justify-center items-center bg-primary-black flex-col'>
+<div className='w-full flex justify-center items-center bg-primary-black flex-col md:mt-24 mt-24'>
   {/* child service div */}
   <div className='flex py-10'>
     {/* h1 div */}
