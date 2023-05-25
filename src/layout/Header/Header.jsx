@@ -3,10 +3,10 @@ import React from 'react'
 import { useState } from 'react'
 import { Routes,Link, Route } from 'react-router-dom'
 import Home from '../../pages/Home/Home'
-import Services from '../../pages/CleaningServices/Services'
+import Services from '../../pages/Services/Services'
 import About from '../../pages/About/About'
 
-export default function HeaderSection
+export default function Header
 () {
   const links = [
     {name: 'Home', link:'/'},
