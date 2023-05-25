@@ -31,7 +31,7 @@ let [open, setOpen ] = useState (false)
         </div>
         {/* mobile div menu button */}
         <div onClick={() => setOpen (!open)} 
-        className='text-3xl relative left-72 bottom-8 md:hidden'>
+        className='text-3xl relative left-72 bottom-8 sm:hidden'>
           <ion-icon  name={open ? 'close' : 'menu'}></ion-icon>
         </div>
         <ul 

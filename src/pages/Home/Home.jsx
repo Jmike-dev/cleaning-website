@@ -15,7 +15,7 @@ export default function Home() {
             <h1 className='text-2xl text-primary-blue hover:text-primary-green md:text-5xl font-serif'>Are you tired of cleaning then it's time to call us</h1>
           </div>
         {/* image div container */}
-          <div className='w-2/3 px-2 md:w-auto md:h-96 my-4' >
+          <div className='w-2/3 px-2 md:w-auto sm:h-96  my-4' >
             <img className=' w-full h-full rounded-xl md:h-96 transition duration-700 ease-in-out hover:-translate-y-3 ' src={IMAGES.img1} alt=""  />
           </div>
       </div>
