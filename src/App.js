@@ -1,13 +1,13 @@
 import './App.css';
-import FooterSection from './layout/Footer/FooterSection';
-import HeaderSection from './layout/Header/HeaderSection';
+import Footer from './layout/Footer/Footer';
+import Header from './layout/Header/Header';
 
 
 function App() {
   return (
    <>
-    <HeaderSection/>
-   <FooterSection/>
+    <Header/>
+   <Footer/>
    </>
   );
 }
