@@ -14,7 +14,7 @@ export default function Services() {
   <div className='flex py-10'>
     {/* h1 div */}
     <div className=' content-center justify-items-center '>
-      <h1 className='text-5xl font-bold text-primary-blue text-center my-2 font-serif '>our Services</h1>
+      <h1 className='text-5xl font-bold text-primary-purple text-center my-2 font-serif '>our Services</h1>
          {/* services div card */}
         <div className='content-center rounded-lg w-full  justify-center bg-primary-green mt-10 flex flex-col lg:flex-row '>
           {/* card image */}

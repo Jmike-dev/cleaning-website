@@ -8,7 +8,7 @@ export default function Items({Links,title}) {
             {Links.map(link =>(
                 <li key={link.name}>
                     <a href={link.link} className='md:text-2xl text-xl cursor-pointer text-primary-blue
-                     hover:text-primary-green'>{link.name}</a>
+                     hover:text-primary-purple'>{link.name}</a>
                 </li>
             ))}
         </ul>

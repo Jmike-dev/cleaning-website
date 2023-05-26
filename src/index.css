@@ -6,10 +6,4 @@
     .inputClass{
         @apply text-center w-full h-12 text-primary-black font-bold rounded-3xl placeholder-primary-black ;
     }
-    .liButton{
-        @apply md:ml-8 text-2xl md:my-0 my-7;
-    }
-    .aButton{
-        @apply py-2 px-2 bg-primary-blue rounded-lg text-primary-black hover:bg-primary-green hover:text-primary-blue font-serif;
-    }
 }

@@ -19,9 +19,9 @@ let [open, setOpen ] = useState (false)
   return (
     <>
      {/* parent div */}
-    <div className=' w-full fixed top-0 left-0  '>
+    <div className=' w-full top-0 left-0  '>
       {/* child div */}
-      <div className='md:flex items-center justify-between shadow-lg  bg-primary-purple mb-32  md:py-4 md:px-10 px-7'>
+      <div className='md:flex items-center justify-between shadow-lg  bg-primary-purple md:py-4 md:px-10 px-7'>
         {/* logo div */}
         <div className='font-bold text-2xl cursor-pointer flex item-center font-serif text-primary-black'>
           <span className='text-3xl text-primary-blue mr-1 pt-2'>
@@ -39,9 +39,9 @@ let [open, setOpen ] = useState (false)
                     md:pl-0 pl-9 transition-all duration-500 ease-in-out ${open ? 'top-20': '-top-96'}`}>
                       {
                         links.map(link =>(
-                          <li key={link.name} className='liButton'>
+                          <li key={link.name} className='md:ml-8 text-2xl md:my-0 my-7'>
                             <Link to={link.link}>
-                            <a href={link.link} className='aButton'>{link.name}</a>
+                            <a href={link.link} className='py-2 px-2 bg-primary-blue rounded-lg text-primary-black hover:bg-primary-green hover:text-primary-black font-serif  duration-700 ease-in-out hover:-translate-y-3 '>{link.name}</a>
                             </Link>
                           </li>
                         ))
