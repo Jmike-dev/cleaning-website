@@ -5,8 +5,8 @@ import IMAGES from '../../../assets/images/images'
 export default function HomeFooter() {
 
   const slides = [
-    {url: IMAGES.slide1},
-    {url: IMAGES.slide2}
+    {url: IMAGES.slide1, title:'What do we do?'},
+    {url: IMAGES.slide2, title: 'We clean your house as well as you do'}
   ]
   const [currentslide, setCurrentSlide] = useState(0)
 
@@ -31,7 +31,14 @@ export default function HomeFooter() {
         {/* slide div */}
           <div 
           style={{backgroundImage: `url(${slides[currentslide].url})`}}
-          className='w-full h-full rounded-2xl bg-center bg-cover duration-700' ></div>
+          className='w-full h-full rounded-2xl bg-center bg-cover duration-700' >
+            <div className='md:pt-52 pt-20'>
+            {slides.map(text => (
+              <h1 key={text.title} className='text-center md:text-5xl font-serif text-primary-black text-2xl '
+              >{text.title}</h1>
+            ))}
+            </div>
+          </div>
           {/* left arrow */}
           <div  className='md:hidden md:group-hover:block absolute md:top-[64rem] top-[33rem] -translate-x-0 translate-y-[50%] 
           left-5 text-2xl rounded-full p-2 bg-black/20  text-white cursor-pointer'>

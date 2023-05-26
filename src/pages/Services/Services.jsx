@@ -1,8 +1,11 @@
 import React from 'react'
 import IMAGES from '../../assets/images/images'
 import InputForm from './components/InputForm'
+import { useState } from 'react'
 
 export default function Services() {
+
+  const [formPopUp, setFormPopUp] = useState(false)
   return (
 <>
 {/* parent service div */}
@@ -25,17 +28,18 @@ export default function Services() {
               </div>
               {/* button div */}
               <div className='md:my-2 '>
-              <a href="/" 
+              <button 
               className='px-4 py-2 bg-primary-blue text-primary-black md:text-3xl text-xl rounded-lg inline-block hover:bg-primary-purple
                hover:text-primary-blue transition duration-500 ease-in-out hover:-translate-y-1 font-sans hover:font-serif my-3'
-              > book now</a>
+               onClick={() => setFormPopUp (true)}
+              > book now</button>
               </div>
           </div>
         </div>  
     </div>
   </div>
-<InputForm/>
 </div>
+  <InputForm trigger={formPopUp}></InputForm>
 </>
   )
 }
