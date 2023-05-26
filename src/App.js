@@ -5,7 +5,7 @@ import Header from './layout/Header/Header';
 
 function App() {
   return (
-   <div className='bg-primary-black'>
+   <div className='bg-primary-black w-auto'>
     <Header/>
    <Footer/>
    </div>

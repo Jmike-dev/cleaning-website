@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <>
     {/* home parent div  container */}
-    <div  className='bg-primary-black  rounded-b-lg  md:w-full sm:w-auto py-2    md:relative shadow-sm shadow-primary-grey'>
+    <div  className='bg-primary-black rounded-b-lg w-full sm:w-auto py-2 md:relative shadow-sm shadow-primary-grey'>
       {/* home child div container */}
        <div className='w-full flex justify-end md:py-4 md:px-2 static' >
           {/* h1  div container */}
