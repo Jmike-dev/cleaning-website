@@ -1,8 +1,9 @@
 import React from 'react'
 
-export default function InputForm() {
-  return (
-    
+export default function InputForm(props) {
+  
+  return ((props.trigger) ? 
+  (
     <div 
     className='w-80 h-96 flex flex-col justify-between items-center bg-primary-purple rounded-lg border-primary-black
      text-primary-black shadow-lg shadow-primary-blue'>
@@ -15,7 +16,8 @@ export default function InputForm() {
       </form>
       <button className='px-4 py-2  bg-primary-blue text-primary-black md:text-3xl text-xl rounded-lg inline-block hover:bg-primary-green hover:text-primary-blue transition duration-500 ease-in-out hover:-translate-y-1
               font-sans hover:font-serif'>Submit</button>
+              {props.children}
     </div>
-    
+  ):'' 
   )
 }
