@@ -1,5 +1,4 @@
 import React from 'react'
-// import Button from '../Footer/components/Button'
 import { useState } from 'react'
 import { Routes,Link, Route } from 'react-router-dom'
 import Home from '../../pages/Home/Home'
@@ -41,7 +40,8 @@ let [open, setOpen ] = useState (false)
                         links.map(link =>(
                           <li key={link.name} className='md:ml-8 text-2xl md:my-0 my-7'>
                             <Link to={link.link}>
-                            <a href={link.link} className='py-2 px-2 bg-primary-blue rounded-lg text-primary-black hover:bg-primary-green hover:text-primary-black font-san  duration-700 ease-in-out hover:-translate-y-3 '>{link.name}</a>
+                            <a href={link.link} className='py-2 px-2 bg-primary-blue rounded-lg text-primary-black 
+                            hover:bg-primary-green hover:text-primary-black font-san  duration-700 ease-in-out hover:-translate-y-3 '>{link.name}</a>
                             </Link>
                           </li>
                         ))

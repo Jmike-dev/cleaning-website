@@ -1,8 +1,14 @@
 import React from 'react'
 import IMAGES from '../../assets/images/images'
 import HomeFoooter from './components/HomeFooter'
+import { useNavigate } from 'react-router-dom'
 
 export default function Home() {
+  let navigate = useNavigate()
+
+  function handleClick (){
+    navigate('/services')
+  }
   return (
     <>
     {/* home parent div  container */}
@@ -20,9 +26,10 @@ export default function Home() {
       </div>
           {/* button div container */}
           <div className='md:relative my-6 mx-6 md:mx-96 md:right-72 md:bottom-32 md:py-4 md:px-4'>
-              <a href="/services" 
+              <button 
+              onClick={handleClick}
               className=" w-full h-full rounded-xl block text-2xl bg-primary-green text-primary-blue text-center md:text-4xl transition duration-500 ease-in-out hover:-translate-y-2 hover:bg-primary-purple hover:text-primary-blue font-sans hover:font-serif"
-              >Book Now</a>
+              >Book Now</button>
           </div>
     </div>
       < HomeFoooter/>
