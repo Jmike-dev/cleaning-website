@@ -42,7 +42,7 @@ export default function HomeFooter() {
           </div>
           {/* left arrow */}
           <div  className='md:hidden md:group-hover:block absolute md:top-[64rem] top-[33rem] -translate-x-0 translate-y-[50%] 
-          -left-1   md:left-5 text-2xl rounded-full p-2 bg-primary-grey text-primary-blue cursor-pointer  '>
+          -left-1   md:left-5 text-2xl rounded-full p-2 bg-primary-grey text-primary-blue cursor-pointer hidden '>
             <BsChevronCompactLeft onClick={prevslide} size={30} />
           </div>
           {/* right arrow */}
