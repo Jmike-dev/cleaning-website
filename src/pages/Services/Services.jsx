@@ -39,7 +39,9 @@ export default function Services() {
     </div>
   </div>
 </div>
+<div className='bg-primary-dark-green justify-center content-center'>
   <InputForm trigger={formPopUp}></InputForm>
+  </div>
 </>
   )
 }

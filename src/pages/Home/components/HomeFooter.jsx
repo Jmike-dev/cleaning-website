@@ -32,9 +32,9 @@ export default function HomeFooter() {
   return (
   <>
   {/* about parent div container */}
-  <div className='w-full rounded-md md:rounded-3xl my-4 flex px-4  group justify-end '>
+  <div className='w-full rounded-md md:rounded-3xl my-4 flex px-4 group justify-end '>
       {/* slides container */}
-      <div className='md:max-w-[1080px] md:h-[780px] h-96 w-3/4 m-auto py-16 px-4 md:ml-10  ml-5' >
+      <div className='md:max-w-[1080px] md:h-[780px] h-96 w-3/4 m-auto py-16 px-4 md:ml-10 ' >
         {/* slide div */}
           <div 
           style={{backgroundImage: `url(${slides[currentslide].url})`}}
