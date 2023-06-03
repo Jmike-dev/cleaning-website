@@ -1,38 +1,46 @@
-import React from 'react'
-import IMAGES from '../../assets/images/images'
-import HomeFoooter from './components/HomeFooter'
-import { useNavigate } from 'react-router-dom'
+import React from "react";
+import IMAGES from "../../assets/images/images";
+import HomeFoooter from "./components/HomeFooter";
+import { useNavigate } from "react-router-dom";
 
 export default function Home() {
-  let navigate = useNavigate()
+  let navigate = useNavigate();
 
-  function handleClick (){
-    navigate('/services')
+  function handleClick() {
+    navigate("/services");
   }
   return (
     <>
-    {/* home parent div  container */}
-    <div  className='bg-primary-black rounded-b-lg w-full sm:w-auto py-2 md:relative shadow-sm shadow-primary-grey'>
-      {/* home child div container */}
-       <div className='w-full flex justify-end md:py-4 md:px-2 static' >
+      {/* home parent div  container */}
+      <div className="w-full rounded-b-lg bg-primary-black py-2 shadow-sm shadow-primary-grey sm:w-auto md:relative">
+        {/* home child div container */}
+        <div className="static flex w-full justify-end md:px-2 md:py-4">
           {/* h1  div container */}
-          <div className=' w-1/2 px-2 mx-1 my-5 md:absolute md:left-5 md:top-5 md:w-1/3'>
-            <h1 className='text-2xl text-primary-purple hover:text-primary-green md:text-5xl font-serif'>Are you tired of cleaning then it's time to call us</h1>
+          <div className=" mx-1 my-5 w-1/2 px-2 md:absolute md:left-5 md:top-5 md:w-1/3">
+            <h1 className="font-serif text-2xl text-primary-purple hover:text-primary-green md:text-5xl">
+              Are you tired of cleaning then it's time to call us
+            </h1>
           </div>
-        {/* image div container */}
-          <div className='w-2/3 px-2 md:w-auto sm:h-96  my-4' >
-            <img className=' w-full h-full rounded-xl md:h-96 transition duration-700 ease-in-out hover:-translate-y-3 ' src={IMAGES.img1} alt=""  />
+          {/* image div container */}
+          <div className="my-4 w-2/3 px-2 sm:h-96  md:w-auto">
+            <img
+              className=" h-full w-full rounded-xl transition duration-700 ease-in-out hover:-translate-y-3 md:h-96 "
+              src={IMAGES.img1}
+              alt=""
+            />
           </div>
+        </div>
+        {/* button div container */}
+        <div className="mx-6 my-6 md:relative md:bottom-32 md:right-72 md:mx-96 md:px-4 md:py-4">
+          <button
+            onClick={handleClick}
+            className=" block h-full w-full rounded-xl bg-primary-green text-center font-sans text-2xl text-primary-blue transition duration-500 ease-in-out hover:-translate-y-2 hover:bg-primary-purple hover:font-serif hover:text-primary-blue md:text-4xl"
+          >
+            Book Now
+          </button>
+        </div>
       </div>
-          {/* button div container */}
-          <div className='md:relative my-6 mx-6 md:mx-96 md:right-72 md:bottom-32 md:py-4 md:px-4'>
-              <button 
-              onClick={handleClick}
-              className=" w-full h-full rounded-xl block text-2xl bg-primary-green text-primary-blue text-center md:text-4xl transition duration-500 ease-in-out hover:-translate-y-2 hover:bg-primary-purple hover:text-primary-blue font-sans hover:font-serif"
-              >Book Now</button>
-          </div>
-    </div>
-      < HomeFoooter/>
+      <HomeFoooter />
     </>
-  )
+  );
 }

@@ -1,16 +1,16 @@
-import React from 'react'
+import React from "react";
 
-export default function SocialIcons({Icons}) {
+export default function SocialIcons({ Icons }) {
   return (
-    <div className='text-primary-purple '>
-  {
-    Icons.map(icon => (
-        <span key={icon.name} 
-                className='p-2 cursor-pointer inline-flex item-center rounded-full bg-primary-black mx-1.5 text-4xl hover:text-primary-green hover:bg-primary-blue'>
-            <ion-icon name={icon.name}></ion-icon>
+    <div className="text-primary-purple ">
+      {Icons.map((icon) => (
+        <span
+          key={icon.name}
+          className="item-center mx-1.5 inline-flex cursor-pointer rounded-full bg-primary-black p-2 text-4xl hover:bg-primary-blue hover:text-primary-green"
+        >
+          <ion-icon name={icon.name}></ion-icon>
         </span>
-    ))
-  }
-  </div>
-  )
+      ))}
+    </div>
+  );
 }
